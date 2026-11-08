@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Query
 from typing import Optional
 from datetime import datetime, timedelta
-from app.db.mongodb import (
+from mongodb import (
     get_weapons_collection,
     get_unattended_bags_collection,
     get_persons_collection,

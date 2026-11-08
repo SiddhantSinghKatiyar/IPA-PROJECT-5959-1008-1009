@@ -43,7 +43,7 @@ def check_env_variables():
 def check_app_object():
     """Check if main app object is named 'app'"""
     try:
-        from app.main import app
+        from main import app
         print(f"✅ App object found: {app.title}")
         return True
     except ImportError as e:

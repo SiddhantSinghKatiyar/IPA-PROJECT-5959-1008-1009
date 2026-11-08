@@ -3,7 +3,7 @@ from bson import ObjectId
 from pymongo.errors import DuplicateKeyError
 import os
 import uuid
-from app.db.mongodb import get_detections_collection
+from mongodb import get_detections_collection
 
 
 UPLOADS_DIR = "uploads"

@@ -1,10 +1,10 @@
 from fastapi import APIRouter, File, UploadFile, Form, HTTPException, Query
 from typing import Optional
 from datetime import datetime, timedelta
-from app.utils.image_storage import store_image
-from app.routes.websocket import broadcast_alert
-from app.routes.system import update_frame_timestamp
-from app.db.mongodb import get_detections_collection
+from image_storage import store_image
+from routes.websocket import broadcast_alert
+from routes.system import update_frame_timestamp
+from mongodb import get_detections_collection
 import asyncio
 
 router = APIRouter()

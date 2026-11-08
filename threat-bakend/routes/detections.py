@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Query
 from typing import Optional
 from datetime import datetime
-from app.db.mongodb import get_detections_collection
+from mongodb import get_detections_collection
 
 router = APIRouter()
 

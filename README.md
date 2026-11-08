@@ -1,13 +1,15 @@
 ##  LINKS
 #### 🔗 Live Demo https://threat-detection-system.vercel.app
-#### 🔗 Youtube video [https://youtu.be/blK5VxmdHL8?si=a2K8tNj3rtzO5HYh](https://youtu.be/KZd_z8Oq-gM?si=qw5e0QISn5FpUbNL)
-#### 🔗 Doc https://docs.google.com/document/d/1NMQOT2Sd4tOBxadgyaiAQodu9ypGkehdYIqWbaBUYVE/edit?usp=sharing
-#### 🔗 Blog https://medium.com/@dreamyaaruz11/smart-threat-detection-alert-system-be4a4d2ad1c1
 # 🛡️ Smart Threat Detection System
+
+**Contibutions to the Project**
+-**Team Lead** ~Siddhant Singh Katiyar (24155959) : Frontend & Backend
+-Tanmay Upadhyay (241551009) : AI Model
+-Swadhin Pradipta Das (241551008) : Database
 
 Real-time AI threat detection system that identifies weapons, unattended bags, and persons with intelligent threat classification and instant alerts.
 
-## ✨ Features
+##  Features
 
 - **YOLOv8 + ByteTrack**: Accurate object detection with persistent tracking across frames to prevent duplicate alerts
 - **Smart Threat Levels**: Context-aware classification (SAFE, MEDIUM, HIGH, CRITICAL) based on object type and behavior
@@ -15,13 +17,13 @@ Real-time AI threat detection system that identifies weapons, unattended bags, a
 - **Triple-Layer Duplicate Prevention**: AI tracking, backend validation, and database constraints ensure no duplicate detections
 - **Real-time Updates**: WebSocket connections provide instant alerts and live dashboard updates
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **AI Detection**: Python with YOLOv8 for object detection, ByteTrack for multi-object tracking, OpenCV for image processing  
 **Backend**: FastAPI for REST API, MongoDB for data storage, WebSockets for real-time communication  
 **Frontend**: React with Vite for fast UI development, TailwindCSS for modern styling
 
-## 📦 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -37,41 +39,42 @@ git clone <repository-url>
 cd smart-threat-detection
 
 # Backend setup
-cd threat-backend
+cd threat-bakend
 python -m venv venv
-venv\Scripts\activate  
+venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
 # Frontend setup
 cd ../threat-frontend
 npm install
 
-# AI model setup
-cd ../AI-model
+# Optional AI model setup
+cd ../AI-MODEL
 pip install -r requirements.txt
 ```
 
 ### Configuration
 
-Create `threat-backend/.env`:
+Create `threat-bakend/.env` by copying `.env.example`:
 ```env
 MONGO_URI=mongodb://localhost:27017/
 ```
+Make sure MongoDB is running if you want to store and query detections.
 
 ### Run
 
 ```bash
 # Terminal 1: Start Backend
-cd threat-backend
-venv\Scripts\activate 
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+cd threat-bakend
+venv\Scripts\Activate.ps1
+python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 # Terminal 2: Start Frontend
 cd threat-frontend
 npm run dev
 
-# Terminal 3: Start AI Detection
-cd AI-model
+# Optional Terminal 3: Start AI Detection
+cd AI-MODEL
 python threat_detection.py
 ```
 
@@ -140,21 +143,10 @@ python test_duplicate_handling.py   # Test duplicate prevention
 - Implement rate limiting
 - Restrict CORS origins
 
-## 📄 License
+##  License
 
 MIT License
 
 ---
 
-**Built with ❤️ for enhanced security**
-
-
-
-
-
-
-
-
-
-
-
+**Built for enhanced security**
