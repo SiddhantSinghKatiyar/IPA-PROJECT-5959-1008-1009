@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##  LINKS
 #### 🔗 Live Demo https://threat-detection-system.vercel.app
 # 🛡️ Smart Threat Detection System
@@ -150,3 +151,6 @@ MIT License
 ---
 
 **Built for enhanced security**
+=======
+# IPA-PROJECT-5959-1008-1009
+>>>>>>> 0eb9beb7efa72ec7fdcbe4530d6644aa7f7c004f
